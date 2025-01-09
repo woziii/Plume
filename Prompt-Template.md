@@ -28,7 +28,7 @@ Chaque élément (jurisprudence, source, doctrine, adage) doit suivre cette stru
         summary: string;         // Résumé en 1-2 phrases
         date?: string;          // Format flexible (ex: "31 janvier 2014" ou "15/03/2021")
         relevanceScore: number; // Score de 0 à 100
-        isPrimary?: boolean;    // Pour les jurisprudences principales
+        isPrimary?: boolean;    // Pour les jurisprudences principales. La valeur True n'est que pour la jurisprudence ayant le relevanceScore le plus élevé.
         tags: string[];        // Liste de tags (peut être vide)
     },
 
