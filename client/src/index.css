@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles personnalisés */
+.jurisprudence-card:hover {
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+}
+
+.chat-interface {
+    resize: both;
+    min-width: 320px;
+    min-height: 400px;
+}
+
+/* Styles pour les badges et les compteurs */
+.badge {
+    @apply absolute -top-1 -right-1 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs;
+}
+
+/* Styles pour les panneaux coulissants */
+.sliding-panel {
+    @apply fixed inset-y-0 right-0 w-96 bg-white shadow-lg p-4 transition-transform z-50;
+}
+
+/* Styles pour le chat */
+.chat-message {
+    @apply mb-4 max-w-[85%];
+}
+
+.chat-message.user {
+    @apply ml-auto bg-blue-100 p-3 rounded-lg;
+}
+
+.chat-message.bot {
+    @apply mr-auto bg-gray-100 p-3 rounded-lg;
+}
